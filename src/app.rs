@@ -1,4 +1,3 @@
-use std::error::Error;
 use std::fs::File;
 use std::io;
 use std::io::Write;
@@ -872,7 +871,7 @@ impl App {
 
     fn copy_content(&mut self, content_target: ContentTarget) {
         match self.get_content_target_data(content_target) {
-            Ok(content) => {
+            Ok(_content) => {
                 // Checked when the user first hits 'y'.
                 let focused_row = &self.viewer.flatjson[self.viewer.focused_row];
 
