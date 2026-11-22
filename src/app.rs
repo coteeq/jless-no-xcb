@@ -315,7 +315,7 @@ impl App {
                     None
                 }
                 KeyEvent(Key::Char('y')) => {
-                    self.set_error_message("Unable to access clipboard: unsupported");
+                    self.set_error_message("Unable to access clipboard: unsupported".to_string());
                     None
                 }
                 KeyEvent(Key::Char('z')) => {
